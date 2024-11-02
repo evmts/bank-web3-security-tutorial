@@ -1,9 +1,9 @@
 import { BankV1 } from '../src/BankV1.s.sol'
-import { bytesToBigint, createMemoryClient, encodeAbiParameters, hexToBigInt, keccak256, parseEther } from 'tevm'
+import { bytesToBigint, createMemoryClient, encodeAbiParameters, hexToBigInt, keccak256, MemoryClient, parseEther } from 'tevm'
 import { createAddress } from 'tevm/address'
 import { beforeEach, test, expect, describe } from 'vitest'
 
-let client = createMemoryClient()
+let client: MemoryClient
 let bank = BankV1.withAddress(createAddress(0).toString())
 
 const mohamed = createAddress(420420)
