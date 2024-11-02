@@ -1,5 +1,9 @@
 # Web3 Security Tutorial | Bank Challenge
 
+This web3 security tutorial contains both foundry tests written in Solidity and Tevm tests written in TypeScript
+
+## Summary
+
 This repository is a simple tutorial in Web3 Security (EVM), the idea of this tutorial is to understand some common bugs in Web3 and concepts you should understand.
 
 This repo is like CTF challenges, but it differs in the structure. Our tutorial is like a game, or to be more accurately, a story, a Story of a group of developers trying to make a Decentralized Bank and launch it on Mainnet. The challenges are in sequence. You should pass the First Challenge to go to the second, and the second to go to the third, etc.

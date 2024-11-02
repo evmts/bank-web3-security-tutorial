@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {BankV1} from "../src/BankV1.sol";
+import {BankV1} from "../src/BankV1.s.sol";
 
 contract BankV1Test is Test {
     BankV1 public bank;
