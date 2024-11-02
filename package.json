@@ -1,0 +1,21 @@
+{
+  "name": "@tevm/bank-web3-security-tutorial",
+  "version": "1.0.0",
+  "description": "A fork of the bank-web3-security-tutorial using javascript",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@tevm/ts-plugin": "1.0.0-next.124",
+    "tevm": "1.0.0-next.126",
+    "vitest": "^2.1.4"
+  }
+}
