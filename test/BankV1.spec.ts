@@ -53,10 +53,6 @@ describe('BankV1', () => {
   test('Take ahmed balance', async () => {
     expect(await client.getBalance({ address: attacker.toString() })).toBe(parseEther('1'))
 
-    const vm = await client.tevm.getVm()
-    const storage = await vm.stateManager.dumpStorage(createAddress(bank.address))
-    Object.entries(storage).map(([key, value]) => console.log(hexToBigInt(`0x${key}`), hexToBigInt(value as `0x${string}`)))
-
     const slot = keccak256(encodeAbiParameters([{ type: 'address' }, { type: 'uint256' }], [ahmed.toString(), 1n]))
 
     const password = await client.getStorageAt({ address: bank.address, slot })
